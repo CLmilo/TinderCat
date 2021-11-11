@@ -7,7 +7,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .container-fluid {
-    padding: 5% 12%;
+    padding: 10% 8%;
 }
 
 .big-heading {
@@ -23,12 +23,30 @@ h1,h2,h3,h4,h5,h6 {
     color: rgb(31, 31, 31);
 }
 
-.coloured-section{
+.coloured-section {
     background-color: rgb(31, 31, 31);
     color: #FFFFFF;
 }
 
+/* PERSONALIZADO*/
 
+.collapse.navbar-collapse.bottom-nav {
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 6.5rem;
+}
+
+.nav-link-bottom {
+    display: block;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    font-size: large;
+    padding-right: 6.5rem;
+}
 
 /* TITLE SECTION */
 
@@ -36,11 +54,17 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0 3% 0;
 }
 
+
+
 #title .container-fluid {
     padding-top: 3%;
     padding-bottom: 15%;
     text-align: center;
+}
 
+#page .container-fluid {
+    padding-top: 3%;
+    text-align: center;
 }
 
 .navbar-light .navbar-brand {
@@ -52,6 +76,17 @@ h1,h2,h3,h4,h5,h6 {
     width: 21%;
     position: absolute;
     right: 25%;
+}
+
+.gato-box {
+    height: 100%;
+    position: relative;
+    border-radius: 10%;
+}
+.feature-box.col-lg-4.gato {
+    height:300px;
+    
+    
 }
 
 .nav-link{
