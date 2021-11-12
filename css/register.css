@@ -1,7 +1,6 @@
-body {
-    text-align: center;
+a{
+    text-decoration: none;
 }
-
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Zen Kaku Gothic Antique'!important;
 }
@@ -39,7 +38,6 @@ h1,h2,h3,h4,h5,h6 {
 #title .container-fluid {
     padding-top: 3%;
     padding-bottom: 15%;
-    text-align: center;
 
 }
 
@@ -184,10 +182,11 @@ h1,h2,h3,h4,h5,h6 {
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
+  border-radius: 5px;
   background: #f1f1f1;
 }
 
@@ -209,6 +208,7 @@ hr {
   padding: 16px 20px;
   margin: 8px 0;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
@@ -225,6 +225,17 @@ a {
 
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {
-  background-color: #f1f1f1;
+  background-color: #3b3b3b;
   text-align: center;
+  border-radius: 5px;
+}
+input[type=date] {
+    margin: .4rem 0;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    background: #f1f1f1;
 }
