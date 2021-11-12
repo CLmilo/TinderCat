@@ -230,6 +230,7 @@ a {
   text-align: center;
   border-radius: 5px;
   width: 80%;
+  border: none;
   margin: 8px 0;
 }
 input[type=date] {
