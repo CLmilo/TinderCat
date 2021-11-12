@@ -46,16 +46,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#title" class="nav-link active" style="color: white;">Inicio</a>
+              <a href="./index.html/#title" class="nav-link active" style="color: white;">Inicio</a>
             </li>
             <li class="nav-item">
-              <a href="#testimonials" class="nav-link" style="color: white;">Nosotros</a>
+              <a href="./index.html/#testimonials" class="nav-link" style="color: white;">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a href="#pricing" class="nav-link" style="color: white;">Registrarse</a>
+              <a href="./register.html" class="nav-link" style="color: white;">Registrarse</a>
             </li>
             <li class="nav-item">
-              <a href="#cta" class="nav-link" style="color: white;">Ingresar</a>
+              <a href="./login.html" class="nav-link" style="color: white;">Ingresar</a>
             </li>
           </ul>
       </nav>
@@ -64,25 +64,34 @@
       <div class="row">
         <div class="col-lg-6">
           <h1 class="display-5">Regístrate</h1>
-          <p>Please fill in this form to create an account.</p>
+          <h5>Por favor complete este formulario para crear una cuenta.</h5>
           <hr>
 
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+          <label for="user"><b>Nombre de Usuario</b></label>
+          <input type="text" placeholder="Ingrese su Nombre de Usuario" name="user" id="user" required>
 
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+          <label for="email"><b>Correo Electrónico</b></label>
+          <input type="text" placeholder="Ingrese su correo electrónico" name="email" id="email" required>
 
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+          <label for="psw"><b>Contraseña de la Cuenta</b></label>
+          <input type="password" placeholder="Ingrese su contraseña" name="psw" id="psw" required>
+
+          <label for="psw-repeat"><b>Repetir Contraseña</b></label>
+          <input type="password" placeholder="Repita su contraseña" name="psw-repeat" id="psw-repeat" required>
+          
+          <label for="start"><b>Fecha de nacimiento</b></label>
+
+          <input type="date" id="start" name="trip-start"
+            value="2010-07-22"
+            min="2000-01-01" max="2020-12-31">
           <hr>
 
-          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-          <button type="submit" class="registerbtn">Register</button>
+          <h5>Al crear una cuenta, acepta nuestros <a href="#">Términos y privacidad</a>.</h5>
+          <button type="submit" class="registerbtn">Registrarse</button>
         
 
           <div class="container signin">
-            <p>Already have an account? <a href="#">Sign in</a>.</p>
+            <p>¿Ya tienes una cuenta? <a href="./login.html">Inicia sesión</a>.</p>
           </div>
         </div>
         <div class="col-lg-6">
