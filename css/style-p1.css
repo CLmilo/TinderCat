@@ -40,6 +40,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* PERSONALIZADO*/
 
+
 .collapse.navbar-collapse.bottom-nav {
     position:relative;
     display:flex;
@@ -60,21 +61,52 @@ h1,h2,h3,h4,h5,h6 {
 
 .perfil-baneo {
     height: 80%;
+    width: auto;
     position: relative;
     border-radius: 10%;
 }
 
+.baneo-row{
+    padding-bottom: 3%;
+    
+    
+}
 .row.white-section {
     border-radius: 3%;
+    height: 700px;
 }
 
+.col-sm-10.place1{
+    width:100%;
+}
+
+.col-sm-10.place2{
+    width:100%;
+}
+input#exampleFormControlInput2 {
+    height:80px;
+}
+
+
+p.display-6 {
+    font-size: calc(0.8rem + 1.0vw);
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom:0%;
+    padding-top: 2%;
+}
 .feature-box.col-lg-4.baneo1 {
-    width: 350px;
-    height: 500px;
+    width: 30%;
+    height: 550px;
+    border-radius: 3%;
+    padding-top:40px;
+    
 }
 .feature-box.col-lg-4.baneo2 {
-    width: 500px;
-    height: 500px;
+    width: 70%;
+    height: 550px;
+    border-radius: 3%;
+    padding-left: 10%;
 }
 /* TITLE SECTION */
 
