@@ -181,7 +181,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -199,6 +199,7 @@ input[type=text]:focus, input[type=password]:focus {
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
+  width: 80%;
 }
 
 /* Set a style for the submit/register button */
@@ -210,7 +211,7 @@ hr {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
   opacity: 0.9;
 }
 
@@ -228,14 +229,20 @@ a {
   background-color: #3b3b3b;
   text-align: center;
   border-radius: 5px;
+  width: 80%;
+  margin: 8px 0;
 }
 input[type=date] {
     margin: .4rem 0;
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
     border-radius: 5px;
     background: #f1f1f1;
+}
+
+h5 {
+    width: 80%;
 }
