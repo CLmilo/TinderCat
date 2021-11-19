@@ -1,0 +1,127 @@
+#body2, body{
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: rgb(31, 31, 31);
+    line-height: 1;
+    max-width: 100%;
+    margin: auto;
+}
+#body2{
+    max-width: 300px;
+}
+.container-fluid {
+    padding: 5% 12%;
+}
+header{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 5px;
+}
+header button{
+    background-color: transparent;
+    border: 0;
+    width:50px;
+    cursor: pointer;
+}
+header button img{
+    width: 100%;
+}
+.top{
+    float: left;
+    width: 33%;
+    text-align: left;
+
+}
+.top:last-child{
+    text-align: right;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 20px;
+}
+
+.user img{
+    width: 350px;
+    height: 500px;
+    display: inline-block;
+    object-fit: cover;
+}
+.actions, .counter{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.actions button{
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    padding: 12px;
+    border: 0px;
+    border-radius: 50px;
+    background-color: #3b3b3b;
+    float: left;
+    cursor: pointer;
+}
+.actions button img{
+    width: 100%;
+    height: auto;
+}
+
+.actions button:nth-of-type(2),
+.actions button:nth-of-type(3) {
+	width: 60px;
+	height: 60px;
+	padding: 15px;
+}
+
+.counter .likes{
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    padding: 12px;
+    border: 0px;
+    border-radius: 17px;
+    background-color: #313131;
+    float: left;
+    color: white;
+}
+.counter .dislikes{
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    padding: 12px;
+    border: 0px;
+    border-radius: 17px;
+    background-color: #313131;
+    float: left;
+    color: white;
+}
+
+  .informacion {
+    font-family: 'Zen Kaku Gothic Antique'!important;
+    color: #DDE4E7;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Zen Kaku Gothic Antique'!important;
+    color: #DDE4E7;
+}
+p {
+    margin-bottom: 0px;
+}
+.nombre {
+    color: #DDE4E7;
+      margin: auto;
+      margin: 10px 0;
+}
