@@ -34,7 +34,7 @@
 
     <div class="container-fluid" style="padding-bottom: 6%;">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="../">
           <h3>TinderCat<i class="fas fa-cat fa-2x" aria-hidden="true"></i></h3>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -45,16 +45,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="index.html" class="nav-link active" style="color: white;">Inicio</a>
+              <a href="../" class="nav-link active" style="color: white;">Inicio</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link" style="color: white;">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a href="register.html" class="nav-link" style="color: white;">Registrarse</a>
+              <a href="../register" class="nav-link" style="color: white;">Registrarse</a>
             </li>
             <li class="nav-item">
-              <a href="login.html" class="nav-link" style="color: white;">Ingresar</a>
+              <a href="../login" class="nav-link" style="color: white;">Ingresar</a>
             </li>
           </ul>
       </nav>
@@ -64,22 +64,26 @@
         <div class="col-lg-6">
           <h1 class="display-5">Iniciar sesión.</h1>
           <h6 style="display: inline-block;">Si todavía no has creado una cuenta, entonces por favor&nbsp</h6><a href="">regístrese</a><h6 style="display: inline-block;">&nbspprimero.</h6>
-
+        <form class="form" method="POST">
+          {% csrf_token %}
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+            <label for="exampleFormControlInput1" class="form-label">Username</label>
             <div class="col-sm-10">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo electrónico">
+                <!-- <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo electrónico"> -->
+                {{ form.username }}
             </div>
           </div>
 
           <div class="mb-3">
             <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
             <div class="col-sm-10">
-              <input type="password" class="form-control" id="inputPassword" placeholder="Ingrese su contraseña">
+              <!-- <input type="password" class="form-control" id="inputPassword" placeholder="Ingrese su contraseña"> -->
+              {{ form.password }}
             </div>
           </div>
         <label for=""><a href="#">Olvidaste tu contraseña?</a></label>
-        <a href="perfil.html" style="color: white ;"><button class="btn btn-primary" type="submit">Iniciar sesión</button></a>
+        <a href="../perfil" style="color: white ;"><button class="btn btn-primary" type="submit">Iniciar sesión</button></a>
+        </form>
         </div>
         <div class="col-lg-6">
           <img class="title-image" src="../../static/images/iphone8.png" alt="iphone-mockup">

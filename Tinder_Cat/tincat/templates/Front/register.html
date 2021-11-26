@@ -35,7 +35,7 @@
     <div class="container-fluid">
       <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="../">
           <h3>TinderCat<i class="fas fa-cat fa-2x" aria-hidden="true"></i></h3>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -46,16 +46,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="index.html" class="nav-link active" style="color: white;">Inicio</a>
+              <a href="../" class="nav-link active" style="color: white;">Inicio</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link" style="color: white;">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a href="register.html" class="nav-link" style="color: white;">Registrarse</a>
+              <a href="../register" class="nav-link" style="color: white;">Registrarse</a>
             </li>
             <li class="nav-item">
-              <a href="login.html" class="nav-link" style="color: white;">Ingresar</a>
+              <a href="../login" class="nav-link" style="color: white;">Ingresar</a>
             </li>
           </ul>
       </nav>
@@ -64,30 +64,32 @@
       <div class="row">
         <div class="col-lg-6">
           <h1 class="display-5">Regístrate</h1>
-          <h6>¿Ya tienes una cuenta? Por favor <a href="login.html">inicia sesión</a></h6>
-
+          <h6>¿Ya tienes una cuenta? Por favor <a href="../login">inicia sesión</a></h6>
+          <form class="form" method="POST">
+            {% csrf_token %}
           <label for="user">Nombre de Usuario</label>
-          <input type="text" placeholder="Ingrese su Nombre de Usuario" name="user" id="user" required>
-
-          <label for="email">Correo Electrónico</label>
-          <input type="text" placeholder="Ingrese su correo electrónico" name="email" id="email" required>
-
+          <!-- <input type="text" placeholder="Ingrese su Nombre de Usuario" name="user" id="user" required> -->
+          {{ form.username }}
+          <label for="email">Correo Electrónico &nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <!-- <input type="text" placeholder="Ingrese su correo electrónico" name="email" id="email" required> -->
+          {{ form.email }}
           <label for="psw">Contraseña &nbsp;&nbsp;&nbsp;&nbsp;</label>
-          <input type="password" placeholder="Ingrese su contraseña" name="psw" id="psw" required>
-
+          <!-- <input type="password" placeholder="Ingrese su contraseña" name="psw" id="psw" required> -->
+          {{ form.password1 }}
           <label for="psw-repeat">Repetir Contraseña</label>
-          <input type="password" placeholder="Repita su contraseña" name="psw-repeat" id="psw-repeat" required>
-          
+          <!-- <input type="password" placeholder="Repita su contraseña" name="psw-repeat" id="psw-repeat" required> -->
+          {{ form.password2 }}
           <label for="start">Fecha de nacimiento</label>
 
-          <input type="date" id="start" name="trip-start"
+          <!-- <input type="date" id="start" name="trip-start"
             value="2010-07-22"
-            min="2000-01-01" max="2020-12-31">
+            min="2000-01-01" max="2020-12-31"> -->
+
+          {{ form.fecha_nacimiento }}
           <hr>
-
           <h5>Al crear una cuenta, acepta nuestros <a href="#">Términos y privacidad</a>.</h5>
-          <a href="login.html" style="color: white;"><button type="submit" class="registerbtn" > Registrarse</button></a>
-
+          <a href="../login" style="color: white;"><button type="submit" id="submit" class="registerbtn" > Registrarse</button></a>
+          </form>
         </div>
         <div class="col-lg-6">
           <img class="title-image" src="../../static/images/iphone9.png" alt="iphone-mockup">

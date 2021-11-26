@@ -1,13 +1,26 @@
-from django.shortcuts import render
+from django.contrib.auth import authenticate
+from django.shortcuts import render, redirect
+from .models import *
+from django.contrib.auth import login, authenticate
+from .forms import InicioForm, RegistroForm
+from django.contrib import messages
 
 def inicio(request):
     return render(request, 'Front/index.html')
     
 def register(request):
-    return render(request, 'Front/register.html')
-
-def login(request):
-    return render(request, 'Front/login.html')
+    if request.method == 'POST':
+        form = RegistroForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data['username']
+            messages.success(request, f'Usuario {username} creado')
+            return redirect('login')
+    else:
+        form = RegistroForm()
+    
+    context = { 'form' : form }
+    return render(request, 'Front/register.html', context)
 
 def perfil(request):
     return render(request, 'Front/perfil.html')
