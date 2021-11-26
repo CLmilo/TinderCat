@@ -13,12 +13,3 @@ class RegistroForm(UserCreationForm):
         model = User
         fields = ['username', 'email', 'password1', 'password2', 'fecha_nacimiento']
         help_texts = {k:"" for k in fields}
-
-class InicioForm(UserCreationForm):
-    email = forms.CharField(label='Correo Electrónico')
-    password = forms.CharField(label='Contraseña', widget=forms.PasswordInput)
-
-    class Meta:
-        model = User
-        fields = ['email', 'password']
-        help_texts = {k:"" for k in fields}
