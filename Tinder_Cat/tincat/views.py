@@ -2,7 +2,7 @@ from django.contrib.auth import authenticate
 from django.shortcuts import render, redirect
 from .models import *
 from django.contrib.auth import login, authenticate
-from .forms import InicioForm, RegistroForm
+from .forms import RegistroForm
 from django.contrib import messages
 
 def inicio(request):
